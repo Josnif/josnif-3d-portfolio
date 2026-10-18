@@ -6,7 +6,7 @@ import { SectionWrapper } from '../HOC'
 import { textVariant, fadeIn } from '../utils/motion'
 import { testimonials } from '../constants'
 
-const FeebackCard = ({ index, testimonial, name, designation, company, image}) => (
+const FeebackCard = ({ index, testimonial, name, company, image}) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
@@ -20,7 +20,7 @@ const FeebackCard = ({ index, testimonial, name, designation, company, image}) =
             <span className='blue-text-gradient'>@</span>{name}
           </p>
           <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
+            {company}
           </p>
         </div>
 

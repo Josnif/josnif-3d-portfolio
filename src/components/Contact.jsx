@@ -6,6 +6,7 @@ import { SectionWrapper } from '../HOC'
 import { slideIn } from '../utils/motion'
 import { EarthCanvas } from './canvas'
 import { styles } from '../styles'
+import { socialLinks } from '../constants'
 
 
 const Contact = () => {
@@ -59,6 +60,24 @@ const Contact = () => {
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
+
+        <div className='mt-6 flex flex-col gap-2 text-secondary text-[16px]'>
+          <a href='mailto:josephnifemi89@gmail.com' className='hover:text-white'>josephnifemi89@gmail.com</a>
+          <p>Ogba, Lagos, Nigeria</p>
+          <div className='mt-2 flex flex-wrap gap-5'>
+            {socialLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.url}
+                target='_blank'
+                rel='noreferrer'
+                className='text-white font-medium hover:text-[#915eff]'
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </div>
 
         <form
           ref={formRef}

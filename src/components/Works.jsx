@@ -8,7 +8,7 @@ import { SectionWrapper } from '../HOC'
 import { projects } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
-const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
+const ProjectCard = ({ index, name, description, tags, image, source_code_link, live_link }) => {
   return (
     <motion.div
       variants={fadeIn("up", "spring", index * 0.5, 0.75)}
@@ -28,17 +28,31 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
             className='w-full h-full object-cover rounded-2xl'
           />
 
-          <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <div 
-              onClick={() => window.open(source_code_link, '_target')}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img 
-                src={github}
-                alt='github'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
+          <div className="absolute inset-0 flex justify-end gap-2 m-3 card-img_hover">
+            {live_link && (
+              <div
+                onClick={() => window.open(live_link, '_blank')}
+                title='Live demo'
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <svg viewBox='0 0 24 24' fill='none' stroke='white' strokeWidth='2' className='w-1/2 h-1/2'>
+                  <path d='M14 3h7v7M10 14 21 3M21 14v7H3V3h7' strokeLinecap='round' strokeLinejoin='round' />
+                </svg>
+              </div>
+            )}
+            {source_code_link && (
+              <div 
+                onClick={() => window.open(source_code_link, '_blank')}
+                title='Source code'
+                className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              >
+                <img 
+                  src={github}
+                  alt='github'
+                  className='w-1/2 h-1/2 object-contain'
+                />
+              </div>
+            )}
           </div>
         </div>
 
@@ -74,7 +88,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects shows my skills and experiene through real-world experience of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
+          The following projects showcase my skills through real work across Web3, full-stack web, mobile and data analysis. Each project is briefly described with links to its code repository and live demo where available. Together they reflect my ability to solve complex problems, work with different technologies and ship projects end to end.
         </motion.p>
       </div>
 

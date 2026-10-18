@@ -9,26 +9,33 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import vuejs from "./tech/vuejs.png";
+import laravel from "./tech/laravel.png";
+import php from "./tech/php.png";
+import python from "./tech/python.png";
+import solidity from "./tech/solidity.png";
+import nextjs from "./tech/nextjs.png";
+import mysql from "./tech/mysql.png";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import josnifIco from "./projects/josnif-ico.jpg";
+import kryptbase from "./projects/kryptbase.jpg";
+import kryptbaseVue from "./projects/kryptbase-vue.jpg";
+import whitelistDapp from "./projects/whitelist-dapp.jpg";
+import daneffy from "./projects/daneffy.jpg";
+import adminDashboard from "./projects/admin-dashboard.jpg";
+import blogApp from "./projects/blog-app.jpg";
+import nftLanding from "./projects/nft-landing.jpg";
+import netflixAnalysis from "./projects/netflix-analysis.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import samson from "./testimonials/samson.jpg";
+import ayomide from "./testimonials/ayomide.jpg";
 
 export {
   logo,
@@ -41,22 +48,29 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  vuejs,
+  laravel,
+  php,
+  python,
+  solidity,
+  nextjs,
+  mysql,
+  josnifIco,
+  kryptbase,
+  kryptbaseVue,
+  whitelistDapp,
+  daneffy,
+  adminDashboard,
+  blogApp,
+  nftLanding,
+  netflixAnalysis,
+  samson,
+  ayomide,
 };

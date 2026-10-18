@@ -44,9 +44,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.
+        I'm a full-stack software developer based in Lagos, Nigeria, with over five years of
+        experience designing, building and deploying web and mobile applications. I work across
+        modern JavaScript frameworks like React, Vue and Next.js, backend systems with Laravel and
+        Node.js, and cloud infrastructure on AWS and Docker. I've built SaaS platforms,
+        cross-platform mobile apps and blockchain dApps, and I currently run Jotweb Technologies,
+        where I lead teams delivering secure, high-performance products for clients.
       </motion.p>
       <div className='mt-20 flex flex-wrap gap-5 sm:gap-10 justify-center'>
         {services.map((service, index) => (
