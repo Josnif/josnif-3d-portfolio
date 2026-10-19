@@ -14,10 +14,11 @@ const SectionWrapper = (Component, idName) => function HOC() {
             viewport={{ once: true, amount: "some", margin: "0px 0px -100px 0px" }}
             className={`${styles.padding} max-w-7xl mx-auto relative z-0`}
         >
-            <Component />
+            {/* Anchor must come first so #links land on the top of the section */}
             <span className="hash-span" id={idName}>
                 {/* &nbsps; */}
             </span>
+            <Component />
         </motion.section>
     )
 }
